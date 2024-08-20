@@ -1,0 +1,406 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  width: auto;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1170px;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-ul a {
+  text-decoration: none;
+}
+.head-btn {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  text-align: left;
+  color: black;
+}
+
+.first-head-btn {
+  color: #606060;
+}
+.h2-head {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 32px;
+  text-align: left;
+  position: relative;
+}
+
+.h2-head::after {
+  content: "\2022";
+  color: #fda300;
+  position: absolute;
+  left: 100%;
+  top: 30%;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-text {
+  margin: 200px 176px 281px 0;
+}
+.main-h1 {
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 66px;
+  text-align: left;
+}
+.main-p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+}
+
+.main-img {
+  margin-top: 76px;
+}
+
+.first-page {
+  background-color: #f1f1f1;
+}
+
+/* Вторая */
+.second-page-main {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin: 90px auto;
+  width: 1170px;
+  height: 228px;
+}
+
+.second-page-main h2 {
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  text-align: left;
+}
+
+.second-page-main p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+}
+
+/* Третий */
+
+.third-page {
+  background-color: #f1f1f1;
+}
+
+.portfolio-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.portfolio-page h1 {
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 51px;
+  text-align: center;
+  margin: 90px auto 70px;
+}
+
+.portfolio-page img {
+  margin-bottom: 40px;
+}
+
+.portfolio-page a {
+  margin-bottom: 90px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: center;
+  color: #070707;
+}
+
+/* Четвертый */
+
+.footer {
+  margin: 90px auto;
+  width: 340px;
+  height: 430px;
+  text-align: center;
+}
+
+.footer h1 {
+  color: #070707;
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 51px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.footer p {
+  color: #070707;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.send {
+  background-color: #070707;
+  color: #f1f1f1;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: center;
+  width: 180px;
+  height: 42px;
+  padding: 7px 23px;
+  border-radius: 20%;
+  text-decoration: none;
+}
+
+.logos {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  margin-top: 80px;
+}
+
+.footer span {
+  color: #828282;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: center;
+}
+/* Тут */
+
+.nav-ul {
+  display: flex;
+  gap: 50px;
+  list-style: none;
+}
+.menu-btn {
+  display: none;
+}
+#menu-toggle {
+  display: none;
+}
+/* Медиа Запросы */
+
+@media (max-width: 768px) {
+  .menu-btn {
+    display: block;
+  }
+  .container {
+    margin: 0 30px;
+  }
+
+  .main {
+    flex-direction: column;
+    text-align: center;
+  }
+  .main-text {
+    margin: 60px 40px 75px 0;
+  }
+  .main-p {
+    text-align: center;
+  }
+  .main-h1 {
+    text-align: center;
+  }
+
+  .second-page-main {
+    flex-direction: column;
+    margin: 90px auto 600px;
+    align-items: start;
+  }
+
+  .second-page-main p {
+    width: 350px;
+  }
+
+  .portfolio-page img {
+    width: 315px;
+    height: 170px;
+    top: 1792px;
+    left: 30px;
+    gap: 0px;
+    opacity: 0px;
+  }
+
+  .nav-ul {
+    display: none;
+  }
+
+  .menu-btn {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  .menu-btn span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #000;
+    margin-bottom: 5px;
+    transition: all 0.3s;
+  }
+
+  #menu-toggle:checked + .menu-btn span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  #menu-toggle:checked + .menu-btn span:nth-child(2) {
+    opacity: 0;
+  }
+
+  #menu-toggle:checked + .menu-btn span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+
+  .nav-ul {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  #menu-toggle:checked ~ .nav-ul {
+    display: block;
+  }
+
+  .nav-ul li {
+    margin-bottom: 10px;
+  }
+
+  .nav-ul a {
+    color: #000;
+  }
+  .container {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  .main {
+    flex-direction: column;
+    text-align: center;
+  }
+  .main-text {
+    margin: 160px 40px 75px 0;
+  }
+  .main-p {
+    text-align: center;
+  }
+  .main-h1 {
+    text-align: center;
+  }
+  .container {
+    max-width: 100%;
+  }
+  .main-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .second-page-main {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .portfolio-page img {
+    width: 100%;
+    height: auto;
+  }
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (max-width: 1200px) {
+  .third-page {
+    margin-top: 281px;
+  }
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    max-width: 100%;
+  }
+  .main-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .second-page-main {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .portfolio-page img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 1400px) {
+  .third-page {
+    margin-top: 281px;
+  }
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    max-width: 100%;
+  }
+  .main-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .second-page-main {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .portfolio-page img {
+    width: 100%;
+    height: auto;
+  }
+}
